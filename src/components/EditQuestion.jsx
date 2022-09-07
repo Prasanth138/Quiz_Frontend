@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 
 const EditQuestion = () => {
-  const URL="http://localhost:5000";
+  const URL="https://quizapp-mern.herokuapp.com";
   const [datas,setDatas]= useState([]);
   const [selected,setSelected]= useState('');
   const [counter,setCounter]= useState(0);

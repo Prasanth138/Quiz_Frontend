@@ -5,7 +5,7 @@ const Card = () => {
     const [index,setIndex]= useState(0);
     const [datas,setDatas]= useState([]);
     const [selectedItem,setSelectedItem]= useState('');
-    const URL="http://localhost:5000";
+    const URL="https://quizapp-mern.herokuapp.com";
 
     const handleSelected = (item) => {
         setSelectedItem(item);
