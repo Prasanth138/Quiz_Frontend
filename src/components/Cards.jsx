@@ -5,7 +5,7 @@ const Card = () => {
     const [index,setIndex]= useState(0);
     const [datas,setDatas]= useState([]);
     const [selectedItem,setSelectedItem]= useState('');
-    const URL="https://quizapp-mern.herokuapp.com";
+    const URL="https://quiz-backend-seven.vercel.app";
 
     const handleSelected = (item) => {
         setSelectedItem(item);

@@ -21,7 +21,7 @@ const CreateQuestion = () => {
   }
 
   const handleCreate =async() => {
-     await axios.post("https://quizapp-mern.herokuapp.com/createQuestion", question).then((res)=>{
+     await axios.post("https://quiz-backend-seven.vercel.app/createQuestion", question).then((res)=>{
       if(res){
         alert("Question Created !!");
         setQuestion({
