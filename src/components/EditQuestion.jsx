@@ -84,8 +84,8 @@ const handleDelete = async(id) => {
                     return(
                         <>
                         <li className="list-group-item" >{item.question}
-                        <a className="btn btn-outline-warning" style={{marginLeft:'5%'}}  onClick={()=>handleSelected(item._id)}>Edit</a>
-                        <a className="btn btn-outline-danger" style={{marginLeft:'5%'}}  onClick={()=>handleDelete(item._id)}>Delete</a>
+                        <button className="btn btn-outline-warning" style={{marginLeft:'5%'}}  onClick={()=>handleSelected(item._id)}>Edit</button>
+                        <button className="btn btn-outline-danger" style={{marginLeft:'5%'}}  onClick={()=>handleDelete(item._id)}>Delete</button>
                         </li>
                         </>
                     )
