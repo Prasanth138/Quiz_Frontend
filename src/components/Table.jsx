@@ -6,6 +6,7 @@ const renderTable = ({datas,selectedItem}) => {
       <table className="table table-striped">
         <thead>
           <tr>
+            <th>Sl.No</th>
             <th>Question</th>
             {/* <th>Your Answer</th> */}
             <th>Correct Answer</th>
@@ -14,6 +15,7 @@ const renderTable = ({datas,selectedItem}) => {
         <tbody>
           {datas.map((data, index) => (
             <tr key={index}>
+              <td>{index+1}</td>
               <td>{data.question}</td>
               {/* <td>{selectedItem[index]}</td> */}
               <td>{data.answer}</td>
